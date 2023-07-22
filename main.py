@@ -59,7 +59,7 @@ def main(save_path, file_name, debug=False):
         LOGS.append(logger(f"INFO: 获得{file_type=}"))
 
         new_name = f"{video}.S{season}E{episode}.{file_type}"
-        if not  debug:
+        if not debug:
             sleep(2)
             shutil.move(f"{save_path}/{file_name}",f"{save_path}/{new_name}")
         LOGS.append(logger(f"INFO: 创建 {save_path}/{new_name} 完成...一切已经准备就绪"))
